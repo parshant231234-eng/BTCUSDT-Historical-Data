@@ -7,7 +7,7 @@ import datetime
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-symbol = sys.argv[1] if len(sys.argv) > 1 else "BTCUSDT"
+symbol = "BTCUSDT"
 HEADERS = ["timestamp", "datetime_utc", "open", "high", "low", "close", "volume", "quote_volume", "trade_count", "taker_buy_volume", "taker_buy_quote_volume"]
 
 now = datetime.datetime.now(datetime.timezone.utc)
